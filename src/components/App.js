@@ -74,7 +74,7 @@ const App = (props) => {
             <h1 name="">Projets suggérés</h1>
 
             <div class="row no-gutters">
-              <h3 class="mr-2">VOIR TOUS LES PROJETS</h3>
+            <a href="#" class="mr-2">VOIR TOUS LES PROJETS</a>
               <img src="assets/chevron_arrow.svg" alt="" />
             </div>
           </div>
@@ -110,7 +110,7 @@ const App = (props) => {
                 <h1 name="">Activité</h1>
 
                 <div class="row no-gutters">
-                  <h3 class="mr-2">VOIR TOUTES LES ACTIVITÉS</h3>
+                  <a href="#" class="mr-2">VOIR TOUTES LES ACTIVITÉS</a>
                   <img src="assets/chevron_arrow.svg" alt="" />
                 </div>
               </div>
@@ -123,7 +123,7 @@ const App = (props) => {
                 <h1 name="">Soutiens</h1>
 
                 <div class="row no-gutters">
-                  <h3 class="mr-2">VOIR TOUS LES SOUTIENS</h3>
+                  <a href="#" class="mr-2">VOIR TOUS LES SOUTIENS</a>
                   <img src="assets/chevron_arrow.svg" alt="" />
                 </div>
               </div>
