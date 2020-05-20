@@ -16,14 +16,14 @@ const Banner = () => {
           </p>
         </div>
 
-        <div className="col-lg-4  justify-content-end my-3">
-          <div className="row no-gutters justify-content-around">
-            <button className={classes["button-outline"]}>
+        <div className="row no-gutters justify-content-md-around justify-content-sm-between">
+          <div className="col-sm-12 col-md-auto">
+            <button className={`${classes["button-outline"]}`}>
               ME RAPPELER PLUS TARD
             </button>
-            <button className={classes["button-solid"]}>
-              REJOINDRE MAINTENANT
-            </button>
+          </div>
+          <div className="col-sm-12 col-md-auto">
+            <button className={`${classes["button-solid"]}`}>REJOINDRE MAINTENANT</button>
           </div>
         </div>
       </div>
