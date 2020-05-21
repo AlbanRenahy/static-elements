@@ -9,15 +9,14 @@ const SuggestedProjectCard = () => {
         <img src="assets/avatar_one.svg" />
         <div className={"col my-auto"}>
           <p className={classes.avatarName}> Alice Martin</p>
-          <p className={classes.avatarTime}> Il y a 5 mois</p>
+          <p className={classes.avatarTime}> Il y a 5 heures</p>
         </div>
         <div className={`${classes.chipGray} col-auto`}>html</div>
       </div>
 
       {/* Content */}
       <p className={`${classes.content}`}>
-        Site Web conçu et développé pour une plateforme éducative axée
-        sur la croissance des enfants.
+      Concevoir et développer un site Web pour une plateforme éducative axée sur la croissance des enfants.
       </p>
 
       {/* Footer */}
@@ -26,7 +25,6 @@ const SuggestedProjectCard = () => {
         <div className={classes.chipBlue}>1.2 ETH</div>
         <div className={`${classes.chipOrange} mr-auto`}>0.3 BTC</div>
         <h4 className={"my-auto"}>
-          {" "}
           760<span>€</span>
         </h4>
       </div>
