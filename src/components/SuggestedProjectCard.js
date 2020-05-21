@@ -1,31 +1,39 @@
 import React from "react";
 import classes from "../styles/BaseStyles.module.css";
 
-const SuggestedProjectCard = () => {
+const SuggestedProjectCard = ({
+  name,
+  time,
+  image,
+  language,
+  description,
+  eth,
+  bit,
+  price,
+}) => {
   return (
-    <div className={`${classes.card} ${classes.projectCard}`}>
+    <div className={`${classes.card} ${classes.projectCard} p-3 p-lg-4`}>
       {/* Header */}
       <div className={"row no-gutters align-items-center"}>
-        <img src="assets/avatar_one.svg" />
+        <img src={image} />
         <div className={"col my-auto"}>
-          <p className={classes.avatarName}> Alice Martin</p>
-          <p className={classes.avatarTime}> Il y a 5 heures</p>
+          <p className={classes.avatarName}> {name}</p>
+          <p className={classes.avatarTime}> {time}</p>
         </div>
-        <div className={`${classes.chipGray} col-auto`}>html</div>
+        <div className={`${classes.chipGray} col-auto`}>{language}</div>
       </div>
 
       {/* Content */}
-      <p className={`${classes.content}`}>
-      Concevoir et développer un site Web pour une plateforme éducative axée sur la croissance des enfants.
-      </p>
+      <p className={`${classes.content}`}>{description}</p>
 
       {/* Footer */}
       <hr className={classes.divider} />
       <div className={"row no-gutters align-items-center"}>
-        <div className={classes.chipBlue}>1.2 ETH</div>
-        <div className={`${classes.chipOrange} mr-auto`}>0.3 BTC</div>
+        <div className={classes.chipBlue}>{eth}</div>
+        <div className={`${classes.chipOrange} mr-auto`}>{bit}</div>
         <h4 className={"my-auto"}>
-          760<span>€</span>
+          {price}
+          <span>€</span>
         </h4>
       </div>
     </div>
