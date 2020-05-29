@@ -1,17 +1,24 @@
 import React from "react";
-import classes from "../styles/BaseStyles.module.css";
+import globals from "../../styles/BaseStyles.module.css";
+import bannerStyles from "./Banner.module.css";
 
 const Banner = () => {
   return (
-    <div className={`${classes.card} ${classes.banner} p-3 p-lg-4`}>
+    <div className={`${globals.card} ${bannerStyles.banner} p-3 p-md-4`}>
       <div class="row no-gutters align-items-center justify-content-around">
         <div className="text-center my-3">
-          <img src="assets/slack_icon.svg" alt="" />
+          <img
+            className={bannerStyles.primary}
+            src="assets/slack_icon.svg"
+            alt=""
+          />
         </div>
 
-        <div className="col-lg-6 col-md-12 my-3 text-lg-left text-center">
-          <p className={classes.title}>Rejoignez la conversation sur Slack</p>
-          <p className={classes.subtitle}>
+        <div className="col-lg-6 col-md-12 my-2 text-lg-left text-center">
+          <p className={`${bannerStyles.title} mb-3`}>
+            Rejoignez la conversation sur Slack
+          </p>
+          <p className={bannerStyles.subtitle}>
             Restez à jour sur les dernières nouvelles et les programmes spéciaux
             qui se déroulent uniquement sur la chaîne Slack.
           </p>
@@ -20,12 +27,12 @@ const Banner = () => {
         <div className="col-lg-4  justify-content-end my-3">
           <div className="row no-gutters justify-content-around">
             <div className="col-auto">
-              <button className={`${classes["button-outline"]}`}>
-                ME RAPPELER PLUS TARD
+              <button className={`${globals["button-outline"]}`}>
+                ME LE RAPPELER PLUS TARD
               </button>
             </div>
             <div className="col-auto">
-              <button className={`${classes["button-solid"]}`}>
+              <button className={`${globals["button-solid"]}`}>
                 REJOINDRE MAINTENANT
               </button>
             </div>

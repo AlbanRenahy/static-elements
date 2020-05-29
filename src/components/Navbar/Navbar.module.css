@@ -1,0 +1,78 @@
+/** Navbar Styles **/
+a.navbar-item,
+a.navbar-item:hover {
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 0.83;
+    letter-spacing: 0.25px;
+    padding: 8px 20px 11px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a.navbar-item:focus {
+    opacity: 1.0;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 20px 11px 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    outline: none;
+}
+
+.account {
+    opacity: 0.9;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 0.83;
+    letter-spacing: 0.25px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    opacity: 0.5;
+}
+
+.brandStrong {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    opacity: 1.0;
+}
+
+.collapseButton,
+.collapseButton:focus {
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.dropdownButton,
+.dropdownButton:focus {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background: none;
+}
+
+img.brandImage {
+    height: 33px;
+    width: 26px;
+}
+
+img.menu {
+    height: 18px;
+    width: 18px;
+}
+
+.badge {
+    margin-top: -10px;
+    margin-left: -10px;
+    position: absolute;
+    color: #ffffff;
+    background-color: #4c5ebb;
+}
